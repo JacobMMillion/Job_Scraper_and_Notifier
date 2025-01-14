@@ -17,3 +17,5 @@ You can install the necessary libraries using pip:
 ```bash
 pip install selenium webdriver-manager python-dotenv
 ```
+
+Be sure to add a `.env` file with the required environment variables (`FROM_EMAIL`, `TO_EMAIL`, `APP_EMAIL_PW`)
