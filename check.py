@@ -26,7 +26,7 @@ url = "https://reg.learningstream.com/view/cal4a.aspx?ek=&ref=0&aa=0&sid1=0&sid2
 
 maxRows = 0
 
-# Loop that runs every 10 minutes
+# Loop that runs every 2.5 minutes
 while True:
     try:
         # Open the webpage
@@ -76,9 +76,9 @@ while True:
     except Exception as e:
         print(f"FAIL - Error: {str(e)}")  # Print specific error if exception occurs
 
-    # Sleep for 5 minutes (300 seconds) before repeating
+    # Sleep for 2.5 minutes (150 seconds) before repeating
     print("---------------------------------")
-    time.sleep(300)
+    time.sleep(150)
 
 # Close the driver after scraping (this line will never be reached unless the loop is broken manually)
 driver.quit()
